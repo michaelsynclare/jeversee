@@ -1,0 +1,147 @@
+/* styles.css */
+
+
+/* Mobile styling */
+body {
+  color: #D3D3D3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: black; /* blackish-grey */
+  /* background-color: blue; */
+}
+
+h1 {
+  color: #D3D3D3;
+  padding: 0;
+  margin: 0;
+  font-size: 44px;
+}
+
+h2 {
+  color: #A6A6A6;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+
+h4 {
+  color: #A6A6A6;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: grey;
+}
+
+.paragraph1 {
+  color: #eeeeee;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: thin;
+}
+
+.paragraph2 {
+  color: #A6A6A6;
+}
+
+.paragraph3 {
+  color: #A6A6A6;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    background-color: black;
+}
+/* Reorder items for small screens (items will appear 3, 1, 2) */
+#item1 { order: 3; }
+#item2 { order: 1; }
+#item3 { order: 2; }
+
+
+
+/* Media query: Desktop styles applied *only* when the viewport width is 768px or wider */
+@media screen and (min-width: 768px) {
+
+body {
+  background-color: #111111; /* blackish-grey */
+}
+
+h2 {
+  display: none;
+}
+
+h4 {
+  color: #A6A6A6;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+    display: flex;
+    /* Default order for large screens (items will appear 1, 2, 3) */
+    flex-direction: row;
+    background-color: #111111;
+    /* background-color: green; */
+}
+
+#item1 { order: 1; }
+#item2 { order: 2; }
+#item3 { order: 3; }
+
+
+
+
+
+.column1 {
+  vertical-align: top;
+  float: left;
+  width: 20%;
+  padding: 4px;
+  margin: 4px;
+  background-color: #111111;
+
+}
+.column2 {
+  vertical-align: top;
+  float: left;
+  padding: 8px;
+  background-color: black;
+}
+.column3 {
+  vertical-align: top;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  background-color: black;
+}
+
+
+/* Clear floats after the columns */
+.table-row:after {
+  content: "";
+  display: table-row;
+  clear: both;
+}
+
+/*
+.table-row {
+  display: table-row;
+}*/
+
+
+
+
+}
+
+
