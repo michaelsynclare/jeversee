@@ -6,3 +6,7 @@ This project taught me about key Python libraries, the different commercial appr
 I removed the actual main.py file while I learn the full impact of allowing forking, disabled rulesets and log visibility :D
 
 Hosted on PythonAnywhere here: https://synclare.pythonanywhere.com/jeverseeMovieDataGrabber.py
+
+<img src="https://michaelsynclare.net/images/IMG_0622.jpg" >
+<br>
+<img src="https://michaelsynclare.net/images/IMG_0620.jpg" >
